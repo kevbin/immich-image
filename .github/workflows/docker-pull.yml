@@ -18,11 +18,12 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Pull Docker image
-      run: docker pull ghcr.io/immich-app/immich-server:v133.1
+      run: docker pull ghcr.io/immich-app/immich-server:v1.133.1
 
     - name: Tag Docker image
-      run: docker tag ghcr.io/immich-app/immich-server kevin517/immich-server:v133.1
+      run: docker tag ghcr.io/immich-app/immich-server kevin517/immich-server:v1.133.1
 
     - name: Push Docker image
-      run: docker push kevin517/immich-server:v133.1
+      run: docker push kevin517/immich-server:v1.133.1
+
 
