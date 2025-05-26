@@ -25,5 +25,15 @@ jobs:
 
     - name: Push Docker image
       run: docker push kevin517/immich-server:v1.133.1
+    
+    #处理immich-machine-learning
+    
+    - name: Pull Docker image immich-machine-learning
+      run: docker pull ghcr.io/immich-app/immich-machine-learning:v1.133.1
 
+    - name: Tag Docker image immich-machine-learning
+      run: docker tag ghcr.io/immich-app/immich-machine-learning:v1.133.1 kevin517/immich-machine-learning:v1.133.1
+
+    - name: Push Docker image immich-machine-learning
+      run: docker push kevin517/immich-machine-learning:v1.133.1
 
