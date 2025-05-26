@@ -21,8 +21,8 @@ jobs:
       run: docker pull ghcr.io/immich-app/immich-server
 
     - name: Tag Docker image
-      run: docker tag ghcr.io/immich-app/immich-server your-dockerhub-username/immich-server:latest
+      run: docker tag ghcr.io/immich-app/immich-server kevin517/immich-server:latest
 
     - name: Push Docker image
-      run: docker push your-dockerhub-username/immich-server:latest
+      run: docker push kevin517/immich-server:latest
 
